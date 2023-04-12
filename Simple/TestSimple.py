@@ -17,5 +17,6 @@ def GeneradorDiccionarios():
                     'edad': randint(1, 100)
                     })
     Ordenador(Lista)
+    print(f'El mas joven es{Lista[0]} y el mas viejo es {Lista[-1]}')
     return Lista
 print(GeneradorDiccionarios())
