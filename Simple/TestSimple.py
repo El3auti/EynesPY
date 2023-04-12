@@ -1,13 +1,13 @@
 from random import randint
 
 def Ordenador(lista = []):
-    intercambiar = True
-    while intercambiar:
-        intercambiar = False
-        for i in range(len(lista) - 1):
-            if lista[i]['edad'] > lista[i + 1]['edad']:
-                lista[i]['edad'], lista[i + 1]['edad'] = lista[i + 1]['edad'], lista[i]['edad']
-                intercambiar = True
+    listaOrdenada = sorted(lista, key=lambda x: x["edad"], reverse=True)
+    joven = listaOrdenada[-1]["id"]
+    viejo = listaOrdenada[0]["id"]
+    print(f"La persona más joven tiene id: {joven}")
+    print(f"La persona más vieja tiene id: {viejo}")
+
+    
                 
 def GeneradorDiccionarios():
     Lista = []
@@ -17,6 +17,10 @@ def GeneradorDiccionarios():
                     'edad': randint(1, 100)
                     })
     Ordenador(Lista)
-    print(f'El mas joven es{Lista[0]} y el mas viejo es {Lista[-1]}')
     return Lista
+
 print(GeneradorDiccionarios())
+
+
+
+
