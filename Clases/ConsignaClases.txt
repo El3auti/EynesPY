@@ -6,4 +6,4 @@ Si printeamos el objeto creado debe mostrarse una representación amigable.
 El objeto debe tener su atributo radio modificable, si se le intenta setear un valor <= 0
 mostrar un error y no permitir modificación.
 Permitir la multiplicación del circulo: Circulo * n debe devolver un nuevo objeto con el radio
-multiplicado por n. No permitir la multiplicación por números <= 0
+multiplicado por n. No permitir la multiplicación por números <= 0 
